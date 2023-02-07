@@ -13,7 +13,7 @@ namespace Bank
        
         public double balance = 100;
 
-        public string holder;
+        public Client holder;
 
 
         public void Deposit(double value)
