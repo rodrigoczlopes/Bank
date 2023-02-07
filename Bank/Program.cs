@@ -4,17 +4,17 @@ CurrentAccount contRodrigo = new CurrentAccount();
 contRodrigo.holder = "Rodrigo";
 contRodrigo.agnumber = 17;
 contRodrigo.cont = "1785-X";
-contRodrigo.saldo = 500;
+contRodrigo.balance = 500;
 
-Console.WriteLine("Conta do Rodrigo possui esse saldo R$" + contRodrigo.saldo);
+Console.WriteLine("Conta do Rodrigo possui esse saldo R$" + contRodrigo.balance);
 
 CurrentAccount contJuliete = new CurrentAccount();
-contRodrigo.holder = "Rodrigo";
-contRodrigo.agnumber = 17;
-contRodrigo.cont = "1785-X";
-contRodrigo.saldo = 500;
+contJuliete.holder = "Juliete";
+contJuliete.agnumber = 13;
+contJuliete.cont = "1785-X";
+contJuliete.balance = 800;
 
-Console.WriteLine("Conta do Rodrigo possui esse saldo R$" + contRodrigo.saldo);
+Console.WriteLine("Conta da Juliete possui esse saldo R$" + contJuliete.balance);
 
 
 

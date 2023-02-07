@@ -13,22 +13,34 @@ namespace Bank
         public string holder;
         public double balance = 100;
 
-        public void Deposit(double valor)
+        public void Deposit(double value)
         {
-            this.balance += valor;
+            this.balance += value;
         }
 
-        public bool Withdraw(double valor)
+        public bool Withdraw(double value)
         {
-            if(this.balance>= valor)
+            if(this.balance>= value)
             {
-                this.balance -= valor;
+                this.balance -= value;
                 return true;
             }
             else
             {
                 return false;
             }
+        }
+        public bool Transfer(double value, CurrentAccount destiny)
+        {
+            if(this.balance<value)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
         }
     }
 }
