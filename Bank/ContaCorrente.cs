@@ -9,9 +9,12 @@ namespace Bank
     public class CurrentAccount
     {
         public int agnumber;
-        public string cont;
-        public string holder;
+        public string account;
+       
         public double balance = 100;
+
+        public string holder;
+
 
         public void Deposit(double value)
         {
