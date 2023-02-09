@@ -6,26 +6,25 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    public class CurrentAccount
+    public class ContaCorrente
     {
-        public int agnumber;
-        public string account;
-       
-        public double balance = 100;
+        public int numeroagencia;
+        public string conta;
+        public double saldo = 100;
 
-        public Client holder;
+        public Cliente titular;
 
 
-        public void Deposit(double value)
+        public void Depositar(double valor)
         {
-            this.balance += value;
+            this.saldo += valor;
         }
 
-        public bool Withdraw(double value)
+        public bool Sacar(double valor)
         {
-            if(this.balance>= value)
+            if(this.saldo >= valor)
             {
-                this.balance -= value;
+                this.saldo -= valor;
                 return true;
             }
             else
@@ -33,9 +32,9 @@ namespace Bank
                 return false;
             }
         }
-        public bool Transfer(double value, CurrentAccount destiny)
+        public bool Transferir(double valor, ContaCorrente destiny)
         {
-            if(this.balance<value)
+            if(this.saldo <valor)
             {
                 return false;
             }

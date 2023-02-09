@@ -1,22 +1,32 @@
 ﻿using Bank;
 
-//CurrentAccount accountRodrigo = new CurrentAccount();
-//accountRodrigo.holder = "Rodrigo";
-//accountRodrigo.agnumber = 17;
-//accountRodrigo.account = "1785-X";
-//accountRodrigo.balance = 500;
+//ContaCorrente contaRodrigo = new ContaCorrente();
+//contaRodrigo.titular = "Rodrigo";
+//contaRodrigo.numeroagencia = 17;
+//contaRodrigo.conta = "1785-X";
+//contaRodrigo.saldo = 500;
 
-//Console.WriteLine("Conta do Rodrigo possui esse saldo R$" + accountRodrigo.balance);
+//Console.WriteLine("Conta do Rodrigo possui esse saldo R$" + contaRodrigo.saldo);
 
-//CurrentAccount accountJuliete = new CurrentAccount();
-//accountJuliete.holder = "Juliete";
-//accountJuliete.agnumber = 13;
-//accountJuliete.account = "1785-X";
-//accountJuliete.balance = 800;
+//ContaCorrente accountJuliete = new ContaCorrente();
+//contaJuliete.titular = "Juliete";
+//contaJuliete.numeroagencia = 13;
+//contaJuliete.conta = "1785-X";
+//contaJuliete.saldo = 800;
 
-//Console.WriteLine("Conta da Juliete possui esse saldo R$" + accountJuliete.balance);
+//Console.WriteLine("Conta da Juliete possui esse saldo R$" + contaJuliete.saldo);
 
-Client client = new Client();
+Cliente client = new Cliente();
+client.nome = "Rodrigo Lopes";
+client.cpf = "89565874565";
+client.profissao = "Desenvolvedor";
 
+ContaCorrente conta = new ContaCorrente();
+conta.titular = client;
+conta.conta = "1010-X";
+conta.numeroagencia = 15;
+conta.saldo = 100;
+
+Console.WriteLine("Titular = " + conta.titular.nome);
 
 

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    internal class Client
+    internal class Cliente
     {
-        public string name;
+        public string nome;
         public string cpf;
-        public string career;
+        public string profissao;
     }
 }
