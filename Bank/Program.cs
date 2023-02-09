@@ -28,5 +28,10 @@ conta.numeroagencia = 15;
 conta.saldo = 100;
 
 Console.WriteLine("Titular = " + conta.titular.nome);
+Console.WriteLine("Cpf = " + conta.titular.cpf);
+Console.WriteLine("Profissão = " + conta.titular.profissao);
+Console.WriteLine("Nº da conta = " + conta.conta);
+Console.WriteLine("Nº da agência = " + conta.numeroagencia);
+Console.WriteLine("Saldo = " + conta.saldo);
 
 

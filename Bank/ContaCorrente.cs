@@ -32,7 +32,7 @@ namespace Bank
                 return false;
             }
         }
-        public bool Transferir(double valor, ContaCorrente destiny)
+        public bool Transferir(double valor, ContaCorrente destino)
         {
             if(this.saldo <valor)
             {
