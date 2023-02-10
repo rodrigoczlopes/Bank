@@ -1,4 +1,5 @@
-﻿using Bank;
+﻿using Bank.Contas;
+using Bank.Titular;
 
 //ContaCorrente contaRodrigo = new ContaCorrente();
 //contaRodrigo.titular = "Rodrigo";
