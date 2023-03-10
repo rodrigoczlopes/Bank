@@ -11,7 +11,7 @@ namespace Bank.Contas
     {
         public int numeroagencia;
         public string conta;
-        public double saldo = 100;
+        private double saldo = 100;
 
         public Cliente titular;
 
@@ -44,6 +44,18 @@ namespace Bank.Contas
                 return true;
             }
 
+        }
+
+        public void DefinirSaldo(double valor)
+        {
+            if(valor < 0)
+            {
+                return;
+            }
+            else
+            {
+                this.saldo = valor;
+            }
         }
     }
 }
